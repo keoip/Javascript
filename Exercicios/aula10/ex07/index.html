@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Somando valores</h1>
-     
+    <link rel="stylesheet" href="estilos/style.css" />
+  </head>
+  <body>
+    <main>
+        <h1>Somando os valores</h1>
         <label for="inumber1">.</label>
-            <input type="number" name="number1" id="inumber1"> +
-
+        <input type="number" name="number1" id="inumber1" /> +
         <label for="inumber2">.</label>
-        <input type="number" name="number2" id="inumber2">
-        
+        <input type="number" name="number2" id="inumber2" />
         <button id="soma">Somar</button>
-        <div id="resposta"> Resposta:</div>
+        <div id="resposta">Resposta:</div>
+    </main>
 
-        <script>
-            var soma = window.document.getElementById('soma')
-            soma.addEventListener('click', Somar)
-            function Somar(){
+    <script>
+      var soma = window.document.getElementById("soma");
+      soma.addEventListener("click", Somar);
 
-            var tn1 = window.document.getElementById('inumber1')
-            var tn2 = window.document.getElementById('inumber2')
-            var n1 = Number(inumber1.value)
-            var n2 = Number(inumber2.value)
-            var s = n1 + n2
-            var resp = window.document.getElementById('resposta')
-            resp.innerHTML = `O resultado entre ${n1} e ${n2} é de ${s}`
-            
-
-            }
-        </script>
-   
-   
-    
-</body>
+      function Somar() {
+        var tn1 = window.document.getElementById("inumber1");
+        var tn2 = window.document.getElementById("inumber2");
+        var n1 = Number(inumber1.value);
+        var n2 = Number(inumber2.value);
+        var s = n1 + n2;
+        var resp = window.document.getElementById("resposta");
+        resp.innerHTML = `O resultado entre ${n1} e ${n2} é de ${s}`;
+      }
+    </script>
+  </body>
 </html>
