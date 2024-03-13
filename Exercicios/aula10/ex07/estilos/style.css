@@ -13,11 +13,6 @@ body {
   margin: 0;
   padding: 0;
 }
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
 h1 {
   color: white;
   text-align: center;
@@ -26,15 +21,19 @@ h1 {
 
 main {
   background-color: rgba(0, 0, 0, 0.642);
-  height: 300px;
-  width: 460px;
-  padding: 10px;
+  height: 400px;
+  width: 300px;
+  padding: 5px;
   border-radius: 20px;
   text-align: center;
   display: block;
   margin: auto;
   position: relative;
   top: 25%;
+}
+
+label{
+    display: none;
 }
 
 #resposta {
@@ -48,7 +47,16 @@ main {
 
 input {
   height: 25px;
-  background-color: rgba(246, 238, 238, 0.985);
+  background-color: darkgray;
+  display: block;
+  margin: 20px;
+  width: 260px;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+} 
+
+#inumber1{
+    margin-right: 120px;
 }
 
 button {
@@ -90,4 +98,5 @@ button:hover {
 
 button {
   margin-top: 20px;
+  height: 50px;
 }
