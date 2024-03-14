@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistemas de passageiro</title>
+    <style>
+      input[type="number"] {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sistema de aceitação de Passageiro!</h1>
+    <div id="idade">
+      <label for="iidade"
+        >Idade do passageiro:
+        <input type="number" name="idade" id="iidade" />
+        <input type="button" value="Verificar" onclick="confirm()" />
+      </label>
+      <div id="resposta"></div>
+    </div>
+    <label for="ipais">
+      Nacionalidade do passageiro:
+      <input type="text" name="pais" id="ipais" />
+      <input type="button" value="Verificar" onclick="check()" />
+    </label>
+
+    <div id="res"></div>
+
+    <script>
+      function check() {
+        var pais = document.getElementById("ipais");
+        var nacionalidade = pais.value;
+        var res = document.getElementById("res");
+        res.innerHTML = `<p>Bem vindo a os EUA voce é <strong>${nacionalidade}<strong/><p/>`;
+        if (nacionalidade == "Estadunidense") {
+          res.innerHTML +=
+            "<p>Voce está autorizado a pisar em solo Americano!<p/>";
+        } else {
+          res.innerHTML +=
+            "<p>Desculpe mas voce não está autorizadoa pisar em solo americano.<p/>";
+        }
+      }
+
+      function confirm() {
+        var anos = document.getElementById("iidade");
+        var idade = Number(iidade.value);
+        var resposta = document.getElementById("resposta");
+        resposta.innerHTML = `Voce tem ${idade} anos de idade!`;
+        if (idade >= 18) {
+          resposta.innerHTML +=
+            "<p>Voce tem idade suficiente para adentrar!</p>";
+        } else {
+          resposta.innerHTML +=
+            "<p>Voce não tem idade suficiente para adentrar, desculpe!</p>";
+        }
+      }
+    </script>
+  </body>
+</html>
