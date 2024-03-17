@@ -10,12 +10,28 @@ header{
 }
 
 section{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.223);
     padding: 10px;
     border-radius: 10px;
     width: 450px;
     margin: auto;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.501);
+}
+
+h1, footer{
+    color: rgba(255, 255, 255, 0.468);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#msg{
+    text-align: center;
+    padding: 10px;
+}
+
+#imagem{
+    margin: auto;
+    display: block;
+    border-radius: 40%;
 }
 
 footer{
