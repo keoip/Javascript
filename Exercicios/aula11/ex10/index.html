@@ -17,11 +17,11 @@
 
     <script>
       function calcular() {
-        var velocidade = document.getElementById("ivel");
-        var v1 = Number(ivel.value);
-        var res = document.getElementById("res");
+        var velocidade = document.getElementById("ivel"); //VARIAVEL DE LIGAÇÃO
+        var v1 = Number(ivel.value); //MANIPULAÇÃO
+        var res = document.getElementById("res"); //VARIAVEL DE LIGAÇÃO
         res.innerHTML = `<p>Sua velocidade é de <strong>${v1} Km/hr <strong/><p/>`;
-        if (v1 > 60) {
+        if (v1 > 60) { //ESTRUTURA DE CONDIÇÃO SIMPLES
           res.innerHTML +=
             "<p>Sua velocidade é acima de 60 km/hr, voce está <strong>MULTADO!<strong/><p/>";
         }

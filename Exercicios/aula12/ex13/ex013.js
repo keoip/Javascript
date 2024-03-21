@@ -14,7 +14,7 @@ var Diasem = agora.getDay()
 
 */
 
-switch(Diasem){
+switch(Diasem){ //ESTRUTURA DE CONDIÇÃO MULTIPLA
     case 0:
         console.log('Domingo')
         break

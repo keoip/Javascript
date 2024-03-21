@@ -24,9 +24,9 @@
     </div>
     
     <script>
-     var area = window.document.getElementById('area')
+     var area = window.document.getElementById('area') //VARIAVEL DE LIGAÇÃO
      
-     area.addEventListener('click', clicar)
+     area.addEventListener('click', clicar) //CRIANDO O EVENTO DOM POR MEIO DO JAVA SCRIPT
      area.addEventListener('mouseenter', entrar)
      area.addEventListener('mouseout', sair)
 
@@ -34,16 +34,16 @@
     function clicar(){
 
     
-    area.innerText = 'Olá mundo!'
+    area.innerText = 'Olá mundo!' //INSERIR TEXTO
 
     }
 
     function sair(){
 
     
-    area.innerText = 'Sair....'
-    area.style.background = 'green'
-    area.style.color = 'black'
+    area.innerText = 'Sair....'//INSERI TEXTO
+    area.style.background = 'green' //MUDA A COR DE FUNDO
+    area.style.color = 'black' //MUDA A COR DA LETRA
     
     
     }
