@@ -19,10 +19,7 @@ function carregar(){
 
     msg.innerHTML = `Agora são ${hora} horas e ${minuto} minutos de ${mes} de ${ano}`
 
-    switch(mes){
-        case 2:
-            mes.innerHTML = 'Março'
-    }
+    
 
     if(hora >= 0 && hora < 12){
         img.src = 'imagens/fotomanha.png'
