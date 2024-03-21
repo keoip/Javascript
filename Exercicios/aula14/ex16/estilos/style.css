@@ -20,12 +20,14 @@ section{
     background-color: white;
     width: 400px;
     margin: auto;
-    height: 150px;
+    height: 360px;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.807);
 }
+
+
 
 input{
     margin: 6px;
