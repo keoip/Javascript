@@ -9,9 +9,8 @@ if(v == -1){
 
 
 let c = 0
-while(c <valor.length){
+while(c<valor.length){
     console.log(`o indice ${c} está na posição ${valor[c]}`)
-    c++
 }
 
 
