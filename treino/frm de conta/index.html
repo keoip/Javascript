@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form de conta</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Form de contas</h1>
+    </header>
+    <section>
+        <div>
+            <label for="in1">Valor 1:
+                <input type="number" name="n1" id="in1">
+            </label>
+        </div>
+        <div>
+            <label for="in2">Valor 2:
+                <input type="number" name="n2" id="in2">
+            </label>
+        </div>
+           <div>
+               <p>Opções</p>
+               <input type="radio" name="conta" id="isoma"><label for="isoma">Soma</label><br>
+               <input type="radio" name="conta" id="isub"><label for="isub">Subtração</label><br>
+               <input type="radio" name="conta" id="imulti"> <label for="imulti"> Multiplicação</label><br>
+               <input type="radio" name="conta" id="idiv"> <label for="idiv">Divisão</label>
+           </div>
+           <p>Resultado:</p>
+            <div id="resposta">
+
+            </div>
+        
+           <input type="button" value="Calcular" onclick="calcular()">
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
