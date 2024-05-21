@@ -1,7 +1,7 @@
 let num = document.getElementById('inumero')
 let lista = document.getElementById('iflist')
 let res = document.getElementById('resposta')
-let valores = []
+let valoresVetor = []
 
 
 function isNumero(n){
@@ -22,8 +22,8 @@ function inLista(n, v){
 
 
 function adicionar(){
-   if(isNumero(num.value) && !inLista(num.value, valores)){
-       valores.push(Number(num.value)) // ADICIONADO O NUM NA ARRAY
+   if(isNumero(num.value) && !inLista(num.value, valoresVetor)){
+       valoresVetor.push(Number(num.value)) // ADICIONADO O NUM NA ARRAY
        let item = document.createElement('option')
        item.innerText = `O valor ${num.value} foi adicionado!`
        lista.appendChild(item)
@@ -36,12 +36,12 @@ function adicionar(){
 }
 
 function validação(){
-    if(valores.length == 0){
+    if(valoresVetor.length == 0){
         alert('Prencha os números acima!')
     } else{
-        let total = valores.length
+        let total = valoresVetor.length
         let soma = 0
-        for(let i = 0; i< valores.length; i++){
+        for(let i = 0; i< valoresVetor.length; i++){
             soma += valores[i]
         }
         let media = soma / total
