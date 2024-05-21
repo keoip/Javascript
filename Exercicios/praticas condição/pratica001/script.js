@@ -4,17 +4,14 @@ function carregar(){
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('foto')
 
-    var h = new Date()
-    var hora = h.getHours()
+    var atual = new Date()
+    var hora = atual.getHours()
 
-    var m = new Date()
-    var minuto = m.getMinutes()
+    var minuto = atual.getMinutes()
 
-    var me = new Date()
-    var mes = me.getMonth()
+    var mes = atual.getMonth()
 
-    var a = new Date()
-    var ano = a.getFullYear()
+    var ano = atual.getFullYear()
 
 
     msg.innerHTML = `Agora são ${hora} horas e ${minuto} minutos de ${mes} de ${ano}`
