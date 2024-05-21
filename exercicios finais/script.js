@@ -27,7 +27,7 @@ function adicionar(){
        let item = document.createElement('option')
        item.innerText = `O valor ${num.value} foi adicionado!`
        lista.appendChild(item)
-       res.innerHTML = ''
+       resposta.innerHTML = ''
     } else {
         alert('[ERRO ESSE NUMERO JÁ FOI DIGITADO OU É MAIOR QUE 100]')
     }
