@@ -1,6 +1,6 @@
 let num = document.getElementById('inumero')
 let lista = document.getElementById('iflist')
-let res = document.getElementById('resposta')
+let resposta = document.getElementById('resposta')
 let valoresVetor = []
 
 
