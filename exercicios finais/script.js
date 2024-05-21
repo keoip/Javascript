@@ -12,8 +12,8 @@ function isNumero(n){
    }
 }
 
-function inLista(n, l){
-    if(l.indexOf(Number(n)) != -1){
+function inLista(n, V){
+    if(V.indexOf(Number(n)) != -1){
         return true
     } else {
         return false
